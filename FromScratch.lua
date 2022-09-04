@@ -124,6 +124,22 @@ local function requireExposedVariables()
         ev.SpawnBot.CurrentValue = newValue
     end
 
+    ev.WandDurability = {}
+    ev.WandDurability.Name = "Wand Durability (Number of uses)"
+    ev.WandDurability.DefaultValue = 1
+    ev.WandDurability.CurrentValue = ev.WandDurability.DefaultValue
+    ev.WandDurability.Callback = function(newValue, variableName)
+        ev.WandDurability.CurrentValue = math.floor(newValue)
+    end
+
+    ev.WaterWandDurability = {}
+    ev.WaterWandDurability.Name = "Water Wand Durability (Number of uses)"
+    ev.WaterWandDurability.DefaultValue = 10
+    ev.WaterWandDurability.CurrentValue = ev.WaterWandDurability.DefaultValue
+    ev.WaterWandDurability.Callback = function(newValue, variableName)
+        ev.WaterWandDurability.CurrentValue = math.floor(newValue)
+    end
+
     ev.Set = function()
         ModBase.ExposeVariable(
             ev.Difficulty.Name,
@@ -134,6 +150,15 @@ local function requireExposedVariables()
         )
 
         ModBase.ExposeVariable(ev.SpawnBot.Name, ev.SpawnBot.DefaultValue, ev.SpawnBot.Callback)
+
+        ModBase.ExposeVariable(ev.WandDurability.Name, ev.WandDurability.DefaultValue, ev.WandDurability.Callback, 1, 100)
+        ModBase.ExposeVariable(
+            ev.WaterWandDurability.Name,
+            ev.WaterWandDurability.DefaultValue,
+            ev.WaterWandDurability.Callback,
+            1,
+            100
+        )
     end
 
     return ev
@@ -643,35 +668,35 @@ local function requireTools()
         ModVariable.SetVariableForObjectAsInt(GameTypes.Tools.BucketCrude, GameTypes.Variables.Unlocked, 1)
         ModVariable.SetVariable(GameTypes.Variables.TurfChance, 60)
 
-        ModVariable.SetVariableForObjectAsInt(t.Names.AppleWand, GameTypes.Variables.Durability, 1)
-        ModVariable.SetVariableForObjectAsInt(t.Names.BerriesWand, GameTypes.Variables.Durability, 1)
-        ModVariable.SetVariableForObjectAsInt(t.Names.DeepSeaWaterWand, GameTypes.Variables.Durability, 10)
-        ModVariable.SetVariableForObjectAsInt(t.Names.DeepWaterWand, GameTypes.Variables.Durability, 10)
-        ModVariable.SetVariableForObjectAsInt(t.Names.MushroomWand, GameTypes.Variables.Durability, 1)
-        ModVariable.SetVariableForObjectAsInt(t.Names.PumpkinWand, GameTypes.Variables.Durability, 1)
-        ModVariable.SetVariableForObjectAsInt(t.Names.SeaWaterWand, GameTypes.Variables.Durability, 10)
-        ModVariable.SetVariableForObjectAsInt(t.Names.StoneWand, GameTypes.Variables.Durability, 1)
-        ModVariable.SetVariableForObjectAsInt(t.Names.TurfWand, GameTypes.Variables.Durability, 10)
-        ModVariable.SetVariableForObjectAsInt(t.Names.WaterWand, GameTypes.Variables.Durability, 10)
+        ModVariable.SetVariableForObjectAsInt(t.Names.AppleWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.BerriesWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.DeepSeaWaterWand, GameTypes.Variables.Durability, ExposedVariables.WaterWandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.DeepWaterWand, GameTypes.Variables.Durability, ExposedVariables.WaterWandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.MushroomWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.PumpkinWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.SeaWaterWand, GameTypes.Variables.Durability, ExposedVariables.WaterWandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.StoneWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.TurfWand, GameTypes.Variables.Durability, ExposedVariables.WaterWandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.WaterWand, GameTypes.Variables.Durability, ExposedVariables.WaterWandDurability.CurrentValue)
 
-        ModVariable.SetVariableForObjectAsInt(t.Names.CeralWand, GameTypes.Variables.Durability, 1)
-        ModVariable.SetVariableForObjectAsInt(t.Names.ClayWand, GameTypes.Variables.Durability, 1)
-        ModVariable.SetVariableForObjectAsInt(t.Names.SandWand, GameTypes.Variables.Durability, 1)
-        ModVariable.SetVariableForObjectAsInt(t.Names.WeedsWand, GameTypes.Variables.Durability, 1)
+        ModVariable.SetVariableForObjectAsInt(t.Names.CeralWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.ClayWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.SandWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.WeedsWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
 
-        ModVariable.SetVariableForObjectAsInt(t.Names.BullrushWand, GameTypes.Variables.Durability, 1)
-        ModVariable.SetVariableForObjectAsInt(t.Names.CowWand, GameTypes.Variables.Durability, 1)
-        ModVariable.SetVariableForObjectAsInt(t.Names.CottonWand, GameTypes.Variables.Durability, 1)
-        ModVariable.SetVariableForObjectAsInt(t.Names.GrassWand, GameTypes.Variables.Durability, 1)
-        ModVariable.SetVariableForObjectAsInt(t.Names.HardRockMassWand, GameTypes.Variables.Durability, 1)
-        ModVariable.SetVariableForObjectAsInt(t.Names.SheepWand, GameTypes.Variables.Durability, 1)
+        ModVariable.SetVariableForObjectAsInt(t.Names.BullrushWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.CowWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.CottonWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.GrassWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.HardRockMassWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.SheepWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
 
-        ModVariable.SetVariableForObjectAsInt(t.Names.BeesWand, GameTypes.Variables.Durability, 1)
-        ModVariable.SetVariableForObjectAsInt(t.Names.ChickenWand, GameTypes.Variables.Durability, 1)
-        ModVariable.SetVariableForObjectAsInt(t.Names.FlowersWand, GameTypes.Variables.Durability, 1)
-        ModVariable.SetVariableForObjectAsInt(t.Names.MetalWand, GameTypes.Variables.Durability, 1)
+        ModVariable.SetVariableForObjectAsInt(t.Names.BeesWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.ChickenWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.FlowersWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.MetalWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
 
-        ModVariable.SetVariableForObjectAsInt(t.Names.CoalWand, GameTypes.Variables.Durability, 1)
+        ModVariable.SetVariableForObjectAsInt(t.Names.CoalWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
     end
 
     return t

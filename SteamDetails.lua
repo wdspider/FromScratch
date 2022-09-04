@@ -3,9 +3,10 @@ function SteamDetails()
     ModBase.SetSteamWorkshopDetails(
         "FromScratch",
         [[
-Version 3.1
+Version 3.2
 Game version 137.14 or higher required
 Designed for Colonize game mode
+https://github.com/wdspider/FromScratch
 
 A little mod that blanks out the whole map and then spawns a few basic things needed to start base creation.  The mod supports 3 difficulty levels: Easy, Medium, Hard.
 You can also choose to start with a buddy, if desired.

@@ -1,7 +1,7 @@
 # FromScratch
 A Steam Workshop game mod for [Autonauts](https://store.steampowered.com/app/979120/Autonauts/).
 
-Version 3.1   
+Version 3.2   
 Game version 137.14 or higher required  
 Designed for Colonize game mode
 
@@ -58,3 +58,9 @@ It currently provides:
 - Chicken Wand
 - Wild Flowers Wand
 - Flower Seeds
+
+---
+
+## Release Notes
+**Version 3.2**
+- Added ability to change wand durability within the mod's settings.
