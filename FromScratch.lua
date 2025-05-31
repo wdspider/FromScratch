@@ -284,10 +284,10 @@ local function requireTools()
     t.Create = function()
         ModTool.CreateTool(
             t.Names.WaterWand,
-            {GameTypes.Tools.BucketCrude, GameTypes.Items.Turf},
-            {1, 3},
+            { GameTypes.Tools.BucketCrude, GameTypes.Items.Turf },
+            { 1, 3 },
             {},
-            {GameTypes.Tiles.Soil, GameTypes.Tiles.Turf},
+            { GameTypes.Tiles.Soil, GameTypes.Tiles.Turf },
             {},
             {},
             1.0,
@@ -299,10 +299,10 @@ local function requireTools()
 
         ModTool.CreateTool(
             t.Names.AppleWand,
-            {t.Names.BerriesWand},
-            {1},
+            { t.Names.BerriesWand },
+            { 1 },
             {},
-            {GameTypes.Tiles.Soil, GameTypes.Tiles.Turf},
+            { GameTypes.Tiles.Soil, GameTypes.Tiles.Turf },
             {},
             {},
             1.0,
@@ -314,12 +314,12 @@ local function requireTools()
 
         ModTool.CreateTool(
             t.Names.BeesWand,
-            {t.Names.ChickenWand},
-            {1},
+            { t.Names.ChickenWand },
+            { 1 },
             {},
-            {GameTypes.Tiles.Soil, GameTypes.Tiles.Turf},
-            {GameTypes.Items.Bees},
-            {1},
+            { GameTypes.Tiles.Soil, GameTypes.Tiles.Turf },
+            { GameTypes.Items.Bees },
+            { 1 },
             1.0,
             "Models/Other/BeesNest",
             false,
@@ -329,10 +329,10 @@ local function requireTools()
 
         ModTool.CreateTool(
             t.Names.BerriesWand,
-            {GameTypes.Items.Stone, GameTypes.Items.Turf, GameTypes.Items.Water},
-            {1, 3, 3},
+            { GameTypes.Items.Stone, GameTypes.Items.Turf, GameTypes.Items.Water },
+            { 1, 3, 3 },
             {},
-            {GameTypes.Tiles.Soil, GameTypes.Tiles.Turf},
+            { GameTypes.Tiles.Soil, GameTypes.Tiles.Turf },
             {},
             {},
             1.0,
@@ -344,12 +344,12 @@ local function requireTools()
 
         ModTool.CreateTool(
             t.Names.BullrushWand,
-            {t.Names.CottonWand},
-            {1},
+            { t.Names.CottonWand },
+            { 1 },
             {},
-            {GameTypes.Tiles.Swamp},
-            {GameTypes.Items.Bullrush},
-            {1},
+            { GameTypes.Tiles.Swamp },
+            { GameTypes.Items.Bullrush },
+            { 1 },
             1.0,
             "Models/Crops/Bullrushes",
             false,
@@ -359,10 +359,10 @@ local function requireTools()
 
         ModTool.CreateTool(
             t.Names.CeralWand,
-            {GameTypes.Tools.ScytheCrude, GameTypes.Items.Turf, GameTypes.Items.Water},
-            {1, 3, 3},
+            { GameTypes.Tools.ScytheCrude, GameTypes.Items.Turf, GameTypes.Items.Water },
+            { 1, 3, 3 },
             {},
-            {GameTypes.Tiles.Soil, GameTypes.Tiles.Turf},
+            { GameTypes.Tiles.Soil, GameTypes.Tiles.Turf },
             {},
             {},
             1.0,
@@ -374,12 +374,12 @@ local function requireTools()
 
         ModTool.CreateTool(
             t.Names.ChickenWand,
-            {GameTypes.Items.Grain, GameTypes.Items.Soil},
-            {5, 2},
+            { GameTypes.Items.Grain, GameTypes.Items.Soil },
+            { 5, 2 },
             {},
-            {GameTypes.Tiles.Soil, GameTypes.Tiles.Turf},
-            {GameTypes.Items.Chicken},
-            {1},
+            { GameTypes.Tiles.Soil, GameTypes.Tiles.Turf },
+            { GameTypes.Items.Chicken },
+            { 1 },
             1.0,
             "Models/Animals/AnimalChicken",
             false,
@@ -389,10 +389,10 @@ local function requireTools()
 
         ModTool.CreateTool(
             t.Names.ClayWand,
-            {GameTypes.Tools.BucketCrude, GameTypes.Items.Sand, GameTypes.Items.Water},
-            {1, 3, 3},
+            { GameTypes.Tools.BucketCrude, GameTypes.Items.Sand, GameTypes.Items.Water },
+            { 1, 3, 3 },
             {},
-            {GameTypes.Tiles.Soil, GameTypes.Tiles.Turf},
+            { GameTypes.Tiles.Soil, GameTypes.Tiles.Turf },
             {},
             {},
             1.0,
@@ -404,10 +404,10 @@ local function requireTools()
 
         ModTool.CreateTool(
             t.Names.CoalWand,
-            {GameTypes.Tools.Pick, GameTypes.Items.MetalPole, GameTypes.Items.Rivets},
-            {1, 1, 4},
+            { GameTypes.Tools.Pick, GameTypes.Items.MetalPole, GameTypes.Items.Rivets },
+            { 1, 1, 4 },
             {},
-            {GameTypes.Tiles.Soil, GameTypes.Tiles.Turf},
+            { GameTypes.Tiles.Soil, GameTypes.Tiles.Turf },
             {},
             {},
             1.0,
@@ -419,10 +419,10 @@ local function requireTools()
 
         ModTool.CreateTool(
             t.Names.CottonWand,
-            {GameTypes.Tools.ScytheCrude, GameTypes.Items.Grain, GameTypes.Items.Water},
-            {1, 5, 5},
+            { GameTypes.Tools.ScytheCrude, GameTypes.Items.Grain, GameTypes.Items.Water },
+            { 1, 5, 5 },
             {},
-            {GameTypes.Tiles.Soil, GameTypes.Tiles.Turf},
+            { GameTypes.Tiles.Soil, GameTypes.Tiles.Turf },
             {},
             {},
             1.0,
@@ -434,12 +434,12 @@ local function requireTools()
 
         ModTool.CreateTool(
             t.Names.CowWand,
-            {GameTypes.Items.Straw, GameTypes.Items.Turf, GameTypes.Items.Water},
-            {4, 2, 3},
+            { GameTypes.Items.Straw, GameTypes.Items.Turf, GameTypes.Items.Water },
+            { 4, 2, 3 },
             {},
-            {GameTypes.Tiles.Soil, GameTypes.Tiles.Turf},
-            {GameTypes.Items.Cow},
-            {1},
+            { GameTypes.Tiles.Soil, GameTypes.Tiles.Turf },
+            { GameTypes.Items.Cow },
+            { 1 },
             1.0,
             "Models/Animals/AnimalCow",
             false,
@@ -449,10 +449,10 @@ local function requireTools()
 
         ModTool.CreateTool(
             t.Names.DeepWaterWand,
-            {t.Names.WaterWand},
-            {1},
+            { t.Names.WaterWand },
+            { 1 },
             {},
-            {GameTypes.Tiles.Soil, GameTypes.Tiles.Turf, GameTypes.Tiles.WaterShallow, GameTypes.Tiles.Swamp},
+            { GameTypes.Tiles.Soil, GameTypes.Tiles.Turf, GameTypes.Tiles.WaterShallow, GameTypes.Tiles.Swamp },
             {},
             {},
             1.0,
@@ -464,10 +464,10 @@ local function requireTools()
 
         ModTool.CreateTool(
             t.Names.FlowersWand,
-            {t.Names.BeesWand, t.Names.GrassWand},
-            {1, 1},
+            { t.Names.BeesWand, t.Names.GrassWand },
+            { 1, 1 },
             {},
-            {GameTypes.Tiles.Soil, GameTypes.Tiles.Tilled, GameTypes.Tiles.Turf},
+            { GameTypes.Tiles.Soil, GameTypes.Tiles.Tilled, GameTypes.Tiles.Turf },
             {},
             {},
             1.0,
@@ -479,10 +479,10 @@ local function requireTools()
 
         ModTool.CreateTool(
             t.Names.GrassWand,
-            {GameTypes.Tools.ScytheCrude, GameTypes.Items.Turf, GameTypes.Items.Water},
-            {1, 5, 5},
+            { GameTypes.Tools.ScytheCrude, GameTypes.Items.Turf, GameTypes.Items.Water },
+            { 1, 5, 5 },
             {},
-            {GameTypes.Tiles.Soil, GameTypes.Tiles.Turf},
+            { GameTypes.Tiles.Soil, GameTypes.Tiles.Turf },
             {},
             {},
             1.0,
@@ -494,10 +494,10 @@ local function requireTools()
 
         ModTool.CreateTool(
             t.Names.HardRockMassWand,
-            {t.Names.StoneWand, GameTypes.Items.Stone},
-            {1, 10},
+            { t.Names.StoneWand, GameTypes.Items.Stone },
+            { 1, 10 },
             {},
-            {GameTypes.Tiles.Soil, GameTypes.Tiles.Turf},
+            { GameTypes.Tiles.Soil, GameTypes.Tiles.Turf },
             {},
             {},
             1.0,
@@ -509,10 +509,10 @@ local function requireTools()
 
         ModTool.CreateTool(
             t.Names.MetalWand,
-            {GameTypes.Tools.PickCrude, GameTypes.Items.Stone, GameTypes.Items.RoughStoneBlock},
-            {1, 5, 3},
+            { GameTypes.Tools.PickCrude, GameTypes.Items.Stone, GameTypes.Items.RoughStoneBlock },
+            { 1, 5, 3 },
             {},
-            {GameTypes.Tiles.Soil, GameTypes.Tiles.Turf},
+            { GameTypes.Tiles.Soil, GameTypes.Tiles.Turf },
             {},
             {},
             1.0,
@@ -524,10 +524,10 @@ local function requireTools()
 
         ModTool.CreateTool(
             t.Names.MushroomWand,
-            {t.Names.BerriesWand},
-            {1},
+            { t.Names.BerriesWand },
+            { 1 },
             {},
-            {GameTypes.Tiles.Soil, GameTypes.Tiles.Turf},
+            { GameTypes.Tiles.Soil, GameTypes.Tiles.Turf },
             {},
             {},
             1.0,
@@ -539,10 +539,10 @@ local function requireTools()
 
         ModTool.CreateTool(
             t.Names.PumpkinWand,
-            {t.Names.BerriesWand},
-            {1},
+            { t.Names.BerriesWand },
+            { 1 },
             {},
-            {GameTypes.Tiles.Soil, GameTypes.Tiles.Turf},
+            { GameTypes.Tiles.Soil, GameTypes.Tiles.Turf },
             {},
             {},
             1.0,
@@ -554,10 +554,10 @@ local function requireTools()
 
         ModTool.CreateTool(
             t.Names.SandWand,
-            {GameTypes.Tools.BucketCrude, GameTypes.Tools.Mallet, GameTypes.Items.Stone},
-            {1, 1, 4},
+            { GameTypes.Tools.BucketCrude, GameTypes.Tools.Mallet, GameTypes.Items.Stone },
+            { 1, 1, 4 },
             {},
-            {GameTypes.Tiles.Soil, GameTypes.Tiles.Turf},
+            { GameTypes.Tiles.Soil, GameTypes.Tiles.Turf },
             {},
             {},
             1.0,
@@ -569,10 +569,10 @@ local function requireTools()
 
         ModTool.CreateTool(
             t.Names.SeaWaterWand,
-            {t.Names.WaterWand},
-            {1},
+            { t.Names.WaterWand },
+            { 1 },
             {},
-            {GameTypes.Tiles.Soil, GameTypes.Tiles.Turf},
+            { GameTypes.Tiles.Soil, GameTypes.Tiles.Turf },
             {},
             {},
             1.0,
@@ -584,10 +584,10 @@ local function requireTools()
 
         ModTool.CreateTool(
             t.Names.DeepSeaWaterWand,
-            {t.Names.SeaWaterWand},
-            {1},
+            { t.Names.SeaWaterWand },
+            { 1 },
             {},
-            {GameTypes.Tiles.Soil, GameTypes.Tiles.Turf},
+            { GameTypes.Tiles.Soil, GameTypes.Tiles.Turf },
             {},
             {},
             1.0,
@@ -599,12 +599,12 @@ local function requireTools()
 
         ModTool.CreateTool(
             t.Names.SheepWand,
-            {t.Names.CowWand},
-            {1},
+            { t.Names.CowWand },
+            { 1 },
             {},
-            {GameTypes.Tiles.Soil, GameTypes.Tiles.Turf},
-            {GameTypes.Items.Sheep},
-            {1},
+            { GameTypes.Tiles.Soil, GameTypes.Tiles.Turf },
+            { GameTypes.Items.Sheep },
+            { 1 },
             1.0,
             "Models/Animals/AnimalSheep",
             false,
@@ -614,10 +614,10 @@ local function requireTools()
 
         ModTool.CreateTool(
             t.Names.StoneWand,
-            {GameTypes.Tools.PickCrude, GameTypes.Items.Soil, GameTypes.Items.Water},
-            {1, 3, 3},
+            { GameTypes.Tools.PickCrude, GameTypes.Items.Soil, GameTypes.Items.Water },
+            { 1, 3, 3 },
             {},
-            {GameTypes.Tiles.Soil, GameTypes.Tiles.Turf},
+            { GameTypes.Tiles.Soil, GameTypes.Tiles.Turf },
             {},
             {},
             1.0,
@@ -629,8 +629,8 @@ local function requireTools()
 
         ModTool.CreateTool(
             t.Names.TurfWand,
-            {t.Names.GrassWand, t.Names.WaterWand},
-            {2, 1},
+            { t.Names.GrassWand, t.Names.WaterWand },
+            { 2, 1 },
             {},
             {
                 GameTypes.Tiles.Clay,
@@ -650,10 +650,10 @@ local function requireTools()
 
         ModTool.CreateTool(
             t.Names.WeedsWand,
-            {GameTypes.Items.Soil, GameTypes.Items.Berries, GameTypes.Items.Water},
-            {1, 3, 3},
+            { GameTypes.Items.Soil, GameTypes.Items.Berries, GameTypes.Items.Water },
+            { 1, 3, 3 },
             {},
-            {GameTypes.Tiles.Soil, GameTypes.Tiles.Turf},
+            { GameTypes.Tiles.Soil, GameTypes.Tiles.Turf },
             {},
             {},
             1.0,
@@ -668,35 +668,60 @@ local function requireTools()
         ModVariable.SetVariableForObjectAsInt(GameTypes.Tools.BucketCrude, GameTypes.Variables.Unlocked, 1)
         ModVariable.SetVariable(GameTypes.Variables.TurfChance, 60)
 
-        ModVariable.SetVariableForObjectAsInt(t.Names.AppleWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
-        ModVariable.SetVariableForObjectAsInt(t.Names.BerriesWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
-        ModVariable.SetVariableForObjectAsInt(t.Names.DeepSeaWaterWand, GameTypes.Variables.Durability, ExposedVariables.WaterWandDurability.CurrentValue)
-        ModVariable.SetVariableForObjectAsInt(t.Names.DeepWaterWand, GameTypes.Variables.Durability, ExposedVariables.WaterWandDurability.CurrentValue)
-        ModVariable.SetVariableForObjectAsInt(t.Names.MushroomWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
-        ModVariable.SetVariableForObjectAsInt(t.Names.PumpkinWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
-        ModVariable.SetVariableForObjectAsInt(t.Names.SeaWaterWand, GameTypes.Variables.Durability, ExposedVariables.WaterWandDurability.CurrentValue)
-        ModVariable.SetVariableForObjectAsInt(t.Names.StoneWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
-        ModVariable.SetVariableForObjectAsInt(t.Names.TurfWand, GameTypes.Variables.Durability, ExposedVariables.WaterWandDurability.CurrentValue)
-        ModVariable.SetVariableForObjectAsInt(t.Names.WaterWand, GameTypes.Variables.Durability, ExposedVariables.WaterWandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.AppleWand, GameTypes.Variables.Durability,
+            ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.BerriesWand, GameTypes.Variables.Durability,
+            ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.DeepSeaWaterWand, GameTypes.Variables.Durability,
+            ExposedVariables.WaterWandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.DeepWaterWand, GameTypes.Variables.Durability,
+            ExposedVariables.WaterWandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.MushroomWand, GameTypes.Variables.Durability,
+            ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.PumpkinWand, GameTypes.Variables.Durability,
+            ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.SeaWaterWand, GameTypes.Variables.Durability,
+            ExposedVariables.WaterWandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.StoneWand, GameTypes.Variables.Durability,
+            ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.TurfWand, GameTypes.Variables.Durability,
+            ExposedVariables.WaterWandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.WaterWand, GameTypes.Variables.Durability,
+            ExposedVariables.WaterWandDurability.CurrentValue)
 
-        ModVariable.SetVariableForObjectAsInt(t.Names.CeralWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
-        ModVariable.SetVariableForObjectAsInt(t.Names.ClayWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
-        ModVariable.SetVariableForObjectAsInt(t.Names.SandWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
-        ModVariable.SetVariableForObjectAsInt(t.Names.WeedsWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.CeralWand, GameTypes.Variables.Durability,
+            ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.ClayWand, GameTypes.Variables.Durability,
+            ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.SandWand, GameTypes.Variables.Durability,
+            ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.WeedsWand, GameTypes.Variables.Durability,
+            ExposedVariables.WandDurability.CurrentValue)
 
-        ModVariable.SetVariableForObjectAsInt(t.Names.BullrushWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
-        ModVariable.SetVariableForObjectAsInt(t.Names.CowWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
-        ModVariable.SetVariableForObjectAsInt(t.Names.CottonWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
-        ModVariable.SetVariableForObjectAsInt(t.Names.GrassWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
-        ModVariable.SetVariableForObjectAsInt(t.Names.HardRockMassWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
-        ModVariable.SetVariableForObjectAsInt(t.Names.SheepWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.BullrushWand, GameTypes.Variables.Durability,
+            ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.CowWand, GameTypes.Variables.Durability,
+            ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.CottonWand, GameTypes.Variables.Durability,
+            ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.GrassWand, GameTypes.Variables.Durability,
+            ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.HardRockMassWand, GameTypes.Variables.Durability,
+            ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.SheepWand, GameTypes.Variables.Durability,
+            ExposedVariables.WandDurability.CurrentValue)
 
-        ModVariable.SetVariableForObjectAsInt(t.Names.BeesWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
-        ModVariable.SetVariableForObjectAsInt(t.Names.ChickenWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
-        ModVariable.SetVariableForObjectAsInt(t.Names.FlowersWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
-        ModVariable.SetVariableForObjectAsInt(t.Names.MetalWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.BeesWand, GameTypes.Variables.Durability,
+            ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.ChickenWand, GameTypes.Variables.Durability,
+            ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.FlowersWand, GameTypes.Variables.Durability,
+            ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.MetalWand, GameTypes.Variables.Durability,
+            ExposedVariables.WandDurability.CurrentValue)
 
-        ModVariable.SetVariableForObjectAsInt(t.Names.CoalWand, GameTypes.Variables.Durability, ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.CoalWand, GameTypes.Variables.Durability,
+            ExposedVariables.WandDurability.CurrentValue)
     end
 
     return t
@@ -721,60 +746,96 @@ local function requireConverters()
         ModVariable.SetIngredientsForRecipeSpecific(
             c.Names.Materializer,
             GameTypes.Items.Stone,
-            {GameTypes.Items.Turf, GameTypes.Items.Stick},
-            {3, 1},
+            { GameTypes.Items.Turf, GameTypes.Items.Stick },
+            { 3, 1 },
             1
         )
 
         ModVariable.SetIngredientsForRecipeSpecific(
             c.Names.RegurgitaterL4,
             GameTypes.Items.AsterSeeds,
-            {Tools.Names.FlowersWand},
-            {1},
+            { Tools.Names.FlowersWand },
+            { 1 },
             1
         )
         ModVariable.SetIngredientsForRecipeSpecific(
             c.Names.RegurgitaterL4,
             GameTypes.Items.ChamomileSeeds,
-            {Tools.Names.FlowersWand},
-            {1},
+            { Tools.Names.FlowersWand },
+            { 1 },
             1
         )
         ModVariable.SetIngredientsForRecipeSpecific(
             c.Names.RegurgitaterL4,
             GameTypes.Items.DelphiniumSeeds,
-            {Tools.Names.FlowersWand},
-            {1},
+            { Tools.Names.FlowersWand },
+            { 1 },
             1
         )
         ModVariable.SetIngredientsForRecipeSpecific(
             c.Names.RegurgitaterL4,
             GameTypes.Items.GladioliSeeds,
-            {Tools.Names.FlowersWand},
-            {1},
+            { Tools.Names.FlowersWand },
+            { 1 },
             1
         )
         ModVariable.SetIngredientsForRecipeSpecific(
             c.Names.RegurgitaterL4,
             GameTypes.Items.PrimroseSeeds,
-            {Tools.Names.FlowersWand},
-            {1},
+            { Tools.Names.FlowersWand },
+            { 1 },
             1
         )
         ModVariable.SetIngredientsForRecipeSpecific(
             c.Names.RegurgitaterL4,
             GameTypes.Items.RoseSeeds,
-            {Tools.Names.FlowersWand},
-            {1},
+            { Tools.Names.FlowersWand },
+            { 1 },
             1
         )
         ModVariable.SetIngredientsForRecipeSpecific(
             c.Names.RegurgitaterL4,
             GameTypes.Items.TulipSeeds,
-            {Tools.Names.FlowersWand},
-            {1},
+            { Tools.Names.FlowersWand },
+            { 1 },
             1
         )
+
+        -- Need to manually readd recipes to the converter due to game bug (140.2)
+        ModVariable.AddRecipeToConverter(c.Names.Materializer, GameTypes.Tools.BucketCrude)
+        ModVariable.AddRecipeToConverter(c.Names.Materializer, Tools.Names.DeepSeaWaterWand)
+        ModVariable.AddRecipeToConverter(c.Names.Materializer, Tools.Names.DeepWaterWand)
+        ModVariable.AddRecipeToConverter(c.Names.Materializer, Tools.Names.SeaWaterWand)
+        ModVariable.AddRecipeToConverter(c.Names.Materializer, Tools.Names.StoneWand)
+        ModVariable.AddRecipeToConverter(c.Names.Materializer, Tools.Names.TurfWand)
+        ModVariable.AddRecipeToConverter(c.Names.Materializer, Tools.Names.WaterWand)
+
+        ModVariable.AddRecipeToConverter(c.Names.MaterializerL2, Tools.Names.ClayWand)
+        ModVariable.AddRecipeToConverter(c.Names.MaterializerL2, Tools.Names.SandWand)
+
+        ModVariable.AddRecipeToConverter(c.Names.MaterializerL3, Tools.Names.HardRockMassWand)
+
+        ModVariable.AddRecipeToConverter(c.Names.MaterializerL4, Tools.Names.MetalWand)
+
+        ModVariable.AddRecipeToConverter(c.Names.MaterializerL5, Tools.Names.CoalWand)
+
+        ModVariable.AddRecipeToConverter(c.Names.Regurgitater, Tools.Names.AppleWand)
+        ModVariable.AddRecipeToConverter(c.Names.Regurgitater, Tools.Names.BerriesWand)
+        ModVariable.AddRecipeToConverter(c.Names.Regurgitater, Tools.Names.MushroomWand)
+        ModVariable.AddRecipeToConverter(c.Names.Regurgitater, Tools.Names.PumpkinWand)
+
+        ModVariable.AddRecipeToConverter(c.Names.RegurgitaterL2, Tools.Names.CeralWand)
+        ModVariable.AddRecipeToConverter(c.Names.RegurgitaterL2, Tools.Names.WeedsWand)
+
+        ModVariable.AddRecipeToConverter(c.Names.RegurgitaterL3, Tools.Names.BullrushWand)
+        ModVariable.AddRecipeToConverter(c.Names.RegurgitaterL3, Tools.Names.CottonWand)
+        ModVariable.AddRecipeToConverter(c.Names.RegurgitaterL3, Tools.Names.CowWand)
+        ModVariable.AddRecipeToConverter(c.Names.RegurgitaterL3, Tools.Names.GrassWand)
+        ModVariable.AddRecipeToConverter(c.Names.RegurgitaterL3, Tools.Names.SheepWand)
+
+        ModVariable.AddRecipeToConverter(c.Names.RegurgitaterL4, Tools.Names.BeesWand)
+        ModVariable.AddRecipeToConverter(c.Names.RegurgitaterL4, Tools.Names.ChickenWand)
+        ModVariable.AddRecipeToConverter(c.Names.RegurgitaterL4, Tools.Names.FlowersWand)
     end
 
     c.Create = function()
@@ -790,86 +851,86 @@ local function requireConverters()
                 Tools.Names.TurfWand,
                 Tools.Names.WaterWand
             },
-            {GameTypes.Items.Log, GameTypes.Items.Plank, GameTypes.Items.Pole},
-            {2, 4, 4},
+            { GameTypes.Items.Log, GameTypes.Items.Plank, GameTypes.Items.Pole },
+            { 2, 4, 4 },
             "Models/Other/Gnome4",
-            {0, 0},
-            {0, 0},
-            {0, 1},
-            {1, 0},
+            { 0, 0 },
+            { 0, 0 },
+            { 0, 1 },
+            { 1, 0 },
             false
         )
         ModConverter.CreateConverter(
             c.Names.MaterializerL2,
-            {Tools.Names.ClayWand, Tools.Names.SandWand},
-            {GameTypes.Bots.AnyBot, GameTypes.Items.GearCrude, GameTypes.Items.Stone},
-            {1, 2, 4},
+            { Tools.Names.ClayWand, Tools.Names.SandWand },
+            { GameTypes.Bots.AnyBot, GameTypes.Items.GearCrude, GameTypes.Items.Stone },
+            { 1, 2, 4 },
             "Models/Other/Gnome4",
-            {0, 0},
-            {0, 0},
-            {0, 1},
-            {1, 0},
+            { 0, 0 },
+            { 0, 0 },
+            { 0, 1 },
+            { 1, 0 },
             false
         )
         ModConverter.CreateConverter(
             c.Names.MaterializerL3,
-            {Tools.Names.HardRockMassWand},
-            {GameTypes.Bots.AnyBot, GameTypes.Items.Clay, GameTypes.Items.Sand},
-            {1, 4, 4},
+            { Tools.Names.HardRockMassWand },
+            { GameTypes.Bots.AnyBot, GameTypes.Items.Clay, GameTypes.Items.Sand },
+            { 1, 4, 4 },
             "Models/Other/Gnome4",
-            {0, 0},
-            {0, 0},
-            {0, 1},
-            {1, 0},
+            { 0, 0 },
+            { 0, 0 },
+            { 0, 1 },
+            { 1, 0 },
             false
         )
         ModConverter.CreateConverter(
             c.Names.MaterializerL4,
-            {Tools.Names.MetalWand},
-            {GameTypes.Bots.AnyBot, GameTypes.Items.Crank, GameTypes.Items.WheelGood},
-            {1, 2, 4},
+            { Tools.Names.MetalWand },
+            { GameTypes.Bots.AnyBot, GameTypes.Items.Crank, GameTypes.Items.WheelGood },
+            { 1, 2, 4 },
             "Models/Other/Gnome4",
-            {0, 0},
-            {0, 0},
-            {0, 1},
-            {1, 0},
+            { 0, 0 },
+            { 0, 0 },
+            { 0, 1 },
+            { 1, 0 },
             false
         )
         ModConverter.CreateConverter(
             c.Names.MaterializerL5,
-            {Tools.Names.CoalWand},
-            {GameTypes.Bots.AnyBot, GameTypes.Items.MetalPlate, GameTypes.Items.MetalPole, GameTypes.Items.Rivets},
-            {1, 2, 4, 4},
+            { Tools.Names.CoalWand },
+            { GameTypes.Bots.AnyBot, GameTypes.Items.MetalPlate, GameTypes.Items.MetalPole, GameTypes.Items.Rivets },
+            { 1, 2, 4, 4 },
             "Models/Other/Gnome4",
-            {0, 0},
-            {0, 0},
-            {0, 1},
-            {1, 0},
+            { 0, 0 },
+            { 0, 0 },
+            { 0, 1 },
+            { 1, 0 },
             false
         )
 
         ModConverter.CreateConverter(
             c.Names.Regurgitater,
-            {Tools.Names.AppleWand, Tools.Names.BerriesWand, Tools.Names.MushroomWand, Tools.Names.PumpkinWand},
-            {GameTypes.Items.Log, GameTypes.Items.Plank, GameTypes.Items.Pole, GameTypes.Items.Stone},
-            {2, 4, 4, 2},
+            { Tools.Names.AppleWand, Tools.Names.BerriesWand, Tools.Names.MushroomWand, Tools.Names.PumpkinWand },
+            { GameTypes.Items.Log, GameTypes.Items.Plank, GameTypes.Items.Pole, GameTypes.Items.Stone },
+            { 2, 4, 4, 2 },
             "Models/Other/Gnome3",
-            {0, 0},
-            {0, 0},
-            {0, 1},
-            {1, 0},
+            { 0, 0 },
+            { 0, 0 },
+            { 0, 1 },
+            { 1, 0 },
             false
         )
         ModConverter.CreateConverter(
             c.Names.RegurgitaterL2,
-            {Tools.Names.CeralWand, Tools.Names.WeedsWand},
-            {GameTypes.Bots.AnyBot, GameTypes.Items.GearCrude, GameTypes.Items.Stone},
-            {1, 2, 4},
+            { Tools.Names.CeralWand, Tools.Names.WeedsWand },
+            { GameTypes.Bots.AnyBot, GameTypes.Items.GearCrude, GameTypes.Items.Stone },
+            { 1, 2, 4 },
             "Models/Other/Gnome3",
-            {0, 0},
-            {0, 0},
-            {0, 1},
-            {1, 0},
+            { 0, 0 },
+            { 0, 0 },
+            { 0, 1 },
+            { 1, 0 },
             false
         )
         ModConverter.CreateConverter(
@@ -881,13 +942,13 @@ local function requireConverters()
                 Tools.Names.GrassWand,
                 Tools.Names.SheepWand
             },
-            {GameTypes.Bots.AnyBot, GameTypes.Items.Clay, GameTypes.Items.Sand},
-            {1, 4, 4},
+            { GameTypes.Bots.AnyBot, GameTypes.Items.Clay, GameTypes.Items.Sand },
+            { 1, 4, 4 },
             "Models/Other/Gnome3",
-            {0, 0},
-            {0, 0},
-            {0, 1},
-            {1, 0},
+            { 0, 0 },
+            { 0, 0 },
+            { 0, 1 },
+            { 1, 0 },
             false
         )
         ModConverter.CreateConverter(
@@ -897,13 +958,13 @@ local function requireConverters()
                 Tools.Names.ChickenWand,
                 Tools.Names.FlowersWand
             },
-            {GameTypes.Bots.AnyBot, GameTypes.Items.Crank, GameTypes.Items.WheelGood},
-            {1, 2, 4},
+            { GameTypes.Bots.AnyBot, GameTypes.Items.Crank, GameTypes.Items.WheelGood },
+            { 1, 2, 4 },
             "Models/Other/Gnome3",
-            {0, 0},
-            {0, 0},
-            {0, 1},
-            {1, 0},
+            { 0, 0 },
+            { 0, 0 },
+            { 0, 1 },
+            { 1, 0 },
             false
         )
     end
