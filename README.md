@@ -2,9 +2,8 @@
 
 A Steam Workshop game mod for [Autonauts](https://store.steampowered.com/app/979120/Autonauts/).
 
-Version 3.2  
-Game version 137.14 or higher required  
-Designed for Colonize game mode
+Version 3.4  
+Game version 137.14 or higher required
 
 Subscribe to the mod here:  
 https://steamcommunity.com/sharedfiles/filedetails/?id=2031579009
@@ -69,6 +68,10 @@ It currently provides:
 ---
 
 ## Release Notes
+
+**Version 3.4**
+
+- Unblocked Hard and Medium difficulties by spoofing Crude Bucket recipe on the Materializer
 
 **Version 3.3**
 

@@ -750,6 +750,13 @@ local function requireConverters()
             { 3, 1 },
             1
         )
+        ModVariable.SetIngredientsForRecipeSpecific(
+            c.Names.Materializer,
+            GameTypes.Tools.BucketCrude,
+            { GameTypes.Items.Plank },
+            { 4 },
+            1
+        )
 
         ModVariable.SetIngredientsForRecipeSpecific(
             c.Names.RegurgitaterL4,
@@ -802,7 +809,6 @@ local function requireConverters()
         )
 
         -- Need to manually readd recipes to the converter due to game bug (140.2)
-        ModVariable.AddRecipeToConverter(c.Names.Materializer, GameTypes.Tools.BucketCrude)
         ModVariable.AddRecipeToConverter(c.Names.Materializer, Tools.Names.DeepSeaWaterWand)
         ModVariable.AddRecipeToConverter(c.Names.Materializer, Tools.Names.DeepWaterWand)
         ModVariable.AddRecipeToConverter(c.Names.Materializer, Tools.Names.SeaWaterWand)
@@ -842,7 +848,6 @@ local function requireConverters()
         ModConverter.CreateConverter(
             c.Names.Materializer,
             {
-                GameTypes.Tools.BucketCrude,
                 GameTypes.Items.Stone,
                 Tools.Names.DeepSeaWaterWand,
                 Tools.Names.DeepWaterWand,

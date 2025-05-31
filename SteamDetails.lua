@@ -3,7 +3,7 @@ function SteamDetails()
     ModBase.SetSteamWorkshopDetails(
         "FromScratch",
         [[
-Version 3.3
+Version 3.4
 Game version 137.14 or higher required
 https://github.com/wdspider/FromScratch
 
