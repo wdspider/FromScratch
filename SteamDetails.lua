@@ -3,7 +3,7 @@ function SteamDetails()
     ModBase.SetSteamWorkshopDetails(
         "FromScratch",
         [[
-Version 3.4
+Version 3.5
 Game version 137.14 or higher required
 https://github.com/wdspider/FromScratch
 
@@ -46,9 +46,11 @@ It currently provides:
 • Ceral Wand
 • Weeds Wand
 • Bullrush Wand
+• Coconut Wand
 • Cotton Wand
 • Cow Wand
 • Grass Wand
+• Mulberry Wand
 • Sheep Wand
 • Bees Wand
 • Chicken Wand

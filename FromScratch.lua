@@ -34,7 +34,9 @@ local function requireGameTypes()
     gt.Items.HardRockMass = "TallBoulder"
     gt.Items.MetalPole = "MetalPoleCrude"
     gt.Items.MetalPlate = "MetalPlateCrude"
+    gt.Items.MulberryTree = "TreeMulberry"
     gt.Items.Mushroom = "Mushroom"
+    gt.Items.PalmTree = "TreeCoconut"
     gt.Items.Plank = "Plank"
     gt.Items.Pole = "Pole"
     gt.Items.PrimroseSeeds = "FlowerSeeds04"
@@ -177,6 +179,7 @@ local function requireTools()
     t.Names.ChickenWand = "Chicken Wand"
     t.Names.ClayWand = "Clay Wand"
     t.Names.CoalWand = "Coal Wand"
+    t.Names.CoconutWand = "Coconut Wand"
     t.Names.CottonWand = "Cotton Wand"
     t.Names.CowWand = "Cow Wand"
     t.Names.DeepSeaWaterWand = "Deep Sea Water Wand"
@@ -185,6 +188,7 @@ local function requireTools()
     t.Names.GrassWand = "Grass Wand"
     t.Names.HardRockMassWand = "Hard Rock Mass Wand"
     t.Names.MetalWand = "Metal Wand"
+    t.Names.MulberryWand = "Mulberry Wand"
     t.Names.MushroomWand = "Mushroom Wand"
     t.Names.PumpkinWand = "Pumpkin Wand"
     t.Names.SandWand = "Sand Wand"
@@ -223,6 +227,10 @@ local function requireTools()
     callbacks.CoalWand = function(uniqueID, x, y)
         ModTiles.SetTile(x, y, GameTypes.Tiles.Coal)
     end
+    callbacks.CoconutWand = function(uniqueID, x, y)
+        ModTiles.SetTile(x, y, GameTypes.Tiles.Turf)
+        ModBase.SpawnItem(GameTypes.Items.PalmTree, x, y)
+    end
     callbacks.CottonWand = function(uniqueID, x, y)
         ModTiles.SetTile(x, y, GameTypes.Tiles.Soil)
         ModBase.SpawnItem(GameTypes.Items.CottonCrop, x, y)
@@ -249,6 +257,10 @@ local function requireTools()
     end
     callbacks.MetalWand = function(uniqueID, x, y)
         ModTiles.SetTile(x, y, GameTypes.Tiles.Metal)
+    end
+    callbacks.MulberryWand = function(uniqueID, x, y)
+        ModTiles.SetTile(x, y, GameTypes.Tiles.Turf)
+        ModBase.SpawnItem(GameTypes.Items.MulberryTree, x, y)
     end
     callbacks.MushroomWand = function(uniqueID, x, y)
         ModTiles.SetTile(x, y, GameTypes.Tiles.Soil)
@@ -418,6 +430,21 @@ local function requireTools()
         )
 
         ModTool.CreateTool(
+            t.Names.CoconutWand,
+            { t.Names.AppleWand, GameTypes.Items.Seed },
+            { 1, 4 },
+            {},
+            { GameTypes.Tiles.Soil, GameTypes.Tiles.Turf },
+            {},
+            {},
+            1.0,
+            "Models/Crops/TreePalm",
+            false,
+            callbacks.CoconutWand,
+            false
+        )
+
+        ModTool.CreateTool(
             t.Names.CottonWand,
             { GameTypes.Tools.ScytheCrude, GameTypes.Items.Grain, GameTypes.Items.Water },
             { 1, 5, 5 },
@@ -519,6 +546,21 @@ local function requireTools()
             "Models/Tools/ToolPick",
             false,
             callbacks.MetalWand,
+            false
+        )
+
+        ModTool.CreateTool(
+            t.Names.MulberryWand,
+            { t.Names.CoconutWand, t.Names.CowWand },
+            { 1, 1 },
+            {},
+            { GameTypes.Tiles.Soil, GameTypes.Tiles.Turf },
+            {},
+            {},
+            1.0,
+            "Models/Crops/TreeMulberry",
+            false,
+            callbacks.MulberryWand,
             false
         )
 
@@ -700,6 +742,8 @@ local function requireTools()
 
         ModVariable.SetVariableForObjectAsInt(t.Names.BullrushWand, GameTypes.Variables.Durability,
             ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.CoconutWand, GameTypes.Variables.Durability,
+            ExposedVariables.WandDurability.CurrentValue)
         ModVariable.SetVariableForObjectAsInt(t.Names.CowWand, GameTypes.Variables.Durability,
             ExposedVariables.WandDurability.CurrentValue)
         ModVariable.SetVariableForObjectAsInt(t.Names.CottonWand, GameTypes.Variables.Durability,
@@ -707,6 +751,8 @@ local function requireTools()
         ModVariable.SetVariableForObjectAsInt(t.Names.GrassWand, GameTypes.Variables.Durability,
             ExposedVariables.WandDurability.CurrentValue)
         ModVariable.SetVariableForObjectAsInt(t.Names.HardRockMassWand, GameTypes.Variables.Durability,
+            ExposedVariables.WandDurability.CurrentValue)
+        ModVariable.SetVariableForObjectAsInt(t.Names.MulberryWand, GameTypes.Variables.Durability,
             ExposedVariables.WandDurability.CurrentValue)
         ModVariable.SetVariableForObjectAsInt(t.Names.SheepWand, GameTypes.Variables.Durability,
             ExposedVariables.WandDurability.CurrentValue)
@@ -834,9 +880,11 @@ local function requireConverters()
         ModVariable.AddRecipeToConverter(c.Names.RegurgitaterL2, Tools.Names.WeedsWand)
 
         ModVariable.AddRecipeToConverter(c.Names.RegurgitaterL3, Tools.Names.BullrushWand)
+        ModVariable.AddRecipeToConverter(c.Names.RegurgitaterL3, Tools.Names.CoconutWand)
         ModVariable.AddRecipeToConverter(c.Names.RegurgitaterL3, Tools.Names.CottonWand)
         ModVariable.AddRecipeToConverter(c.Names.RegurgitaterL3, Tools.Names.CowWand)
         ModVariable.AddRecipeToConverter(c.Names.RegurgitaterL3, Tools.Names.GrassWand)
+        ModVariable.AddRecipeToConverter(c.Names.RegurgitaterL3, Tools.Names.MulberryWand)
         ModVariable.AddRecipeToConverter(c.Names.RegurgitaterL3, Tools.Names.SheepWand)
 
         ModVariable.AddRecipeToConverter(c.Names.RegurgitaterL4, Tools.Names.BeesWand)
@@ -942,9 +990,11 @@ local function requireConverters()
             c.Names.RegurgitaterL3,
             {
                 Tools.Names.BullrushWand,
+                Tools.Names.CoconutWand,
                 Tools.Names.CottonWand,
                 Tools.Names.CowWand,
                 Tools.Names.GrassWand,
+                Tools.Names.MulberryWand,
                 Tools.Names.SheepWand
             },
             { GameTypes.Bots.AnyBot, GameTypes.Items.Clay, GameTypes.Items.Sand },

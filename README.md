@@ -2,7 +2,7 @@
 
 A Steam Workshop game mod for [Autonauts](https://store.steampowered.com/app/979120/Autonauts/).
 
-Version 3.4  
+Version 3.5  
 Game version 137.14 or higher required
 
 Subscribe to the mod here:  
@@ -56,9 +56,11 @@ It currently provides:
 - Ceral Wand
 - Weeds Wand
 - Bullrush Wand
+- Coconut Wand
 - Cotton Wand
 - Cow Wand
 - Grass Wand
+- Mulberry Wand
 - Sheep Wand
 - Bees Wand
 - Chicken Wand
@@ -68,6 +70,10 @@ It currently provides:
 ---
 
 ## Release Notes
+
+**Version 3.5**
+
+- Added coconut and mulberry wands to the Regurgitater
 
 **Version 3.4**
 
